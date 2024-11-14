@@ -21,11 +21,10 @@ public class Menu {
 			System.out.println("            2 - Listar todos os produtos             ");
 			System.out.println("            3 - Buscar Produto por Numero            ");
 			System.out.println("            4 - Atualizar Produto                    ");
-			System.out.println("            5 - Deletar compra                       ");
-			System.out.println("            6 - Meus pedidos                         ");
-			System.out.println("            7 - Metodos de pagamento                 ");
-			System.out.println("            8 - Redes Sociais                        ");
-			System.out.println("            9 - Sair                                 ");
+			System.out.println("            5 - Deletar Produto                       ");
+			System.out.println("            6 - Metodos de pagamento                 ");
+			System.out.println("            7 - Redes Sociais                        ");
+			System.out.println("            8 - Sair                                 ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.printf("Entre com a opção desejada:                          ");
@@ -33,9 +32,10 @@ public class Menu {
 
 			opcao = scanner.nextInt();
 
-			if (opcao == 9) {
+			if (opcao == 8) {
 				System.out.println("\nAté mais! Aproveite seu café!");
-
+				
+				sobre();
 				scanner.close();
 				System.exit(0);
 			}
@@ -58,18 +58,14 @@ public class Menu {
 
 				break;
 			case 5:
-				System.out.println("Deletar Compra\n\n");
+				System.out.println("Deletar Produto\n\n");
 
 				break;
 			case 6:
-				System.out.println("Meus Pedidos\n\n");
-
-				break;
-			case 7:
 				System.out.println("Metodos de pagamento\n\n");
 
 				break;
-			case 8:
+			case 7:
 				System.out.println("Redes Sociais\n\n");
 
 				break;
@@ -79,5 +75,12 @@ public class Menu {
 			}
 
 		}
+	}
+	public static void sobre() {
+		System.out.println("\n*********************************************************");
+		System.out.println("Projeto Desenvolvido por: Bruna F. Artioli");
+		System.out.println("Generation Brasil - brunaartioli.ba@gmail.com");
+		System.out.println("https://github.com/brartioli/projeto_final_bloco_01");
+		System.out.println("*********************************************************");
 	}
 }
