@@ -5,8 +5,8 @@ public class ProdutoCafé extends Produto {
 	private String produtor;
 	private String origem;
 
-	public ProdutoCafé(int numero, String nome, float preco, String produtor, String origem) {
-		super(nome, numero, preco);
+	public ProdutoCafé(int numero, int tipo, String nome, float preco, String produtor, String origem) {
+		super(nome, numero, tipo, preco);
 		this.produtor = produtor;
 		this.origem = origem;
 	}

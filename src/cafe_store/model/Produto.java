@@ -2,12 +2,13 @@ package cafe_store.model;
 
 public abstract class Produto {
 	private String nome;
-	private int numero;
+	private int numero, tipo;
 	private float preco;
 
-	public Produto(String nome, int numero, float preco) {
+	public Produto(String nome, int numero, int tipo, float preco) {
 		this.nome = nome;
 		this.numero = numero;
+		this.tipo = tipo;
 		this.preco = preco;
 	}
 
@@ -33,6 +34,15 @@ public abstract class Produto {
 
 	public void setPreco(float preco) {
 		this.preco = preco;
+	}
+	
+
+	public int getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
 	}
 
 	public void visualizar() {
