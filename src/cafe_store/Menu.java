@@ -30,7 +30,7 @@ public class Menu {
 			System.out.printf("Entre com a opção desejada:                          ");
 			System.out.println("                                                     ");
 
-			opcao = scanner.nextInt();
+			opcao = scanner.nextInt(); 
 
 			if (opcao == 8) {
 				System.out.println("\nAté mais! Aproveite seu café!");
